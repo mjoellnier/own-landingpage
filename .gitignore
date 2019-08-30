@@ -10,6 +10,7 @@ build/
 remote-repo/
 coverage/
 .module-cache
+.cache
 fixtures/dom/public/react-dom.js
 fixtures/dom/public/react.js
 test/the-files-to-test.generated.js
