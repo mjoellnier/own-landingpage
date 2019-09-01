@@ -12,6 +12,14 @@ body {
   letter-spacing: 0.225em;
 }
 
+.span1 {
+  grid-column: span 1;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -40,3 +48,13 @@ body {
   align-items: center;
   justify-content: center;
 } */
+
+@media (max-width: 900px) {
+  .span1 {
+    grid-column: span 2;
+  }
+
+  .span2 {
+    grid-column: span 2;
+  }
+}
