@@ -1,3 +1,7 @@
+/*===============
+* == GERNERAL  ==
+*===============*/
+
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 
 body {
@@ -5,11 +9,9 @@ body {
   background-color: #414141 !important;
 }
 
-#hey {
-  font-size: xx-large;
-  font-family: "Titillium Web", sans-serif;
-  position: relative;
-  letter-spacing: 0.225em;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .span1 {
@@ -20,12 +22,26 @@ body {
   grid-column: span 2;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.grid div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.grid div {
+/*============
+* == INTRO  ==
+*============*/
+
+#hey {
+  font-size: xx-large;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+  letter-spacing: 0.225em;
+}
+
+#introDiv1,
+#introDiv2 {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -42,13 +58,9 @@ body {
   background: #ca3e47;
 }
 
-/* .flexCenter {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
+/*=============
+* == MOBILE  ==
+*=============*/
 @media (max-width: 900px) {
   .span1 {
     grid-column: span 2;
@@ -56,5 +68,14 @@ body {
 
   .span2 {
     grid-column: span 2;
+  }
+
+  /*============
+  * == INTRO  ==
+  *============*/
+
+  #introDiv1,
+  #introDiv2 {
+    height: 50vh !important;
   }
 }
