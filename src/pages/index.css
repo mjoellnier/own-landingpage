@@ -22,12 +22,12 @@ body {
   grid-column: span 2;
 }
 
-.grid div {
+/* .grid div {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /*============
 * == INTRO  ==
@@ -37,7 +37,6 @@ body {
   font-size: xx-large;
   font-family: "Titillium Web", sans-serif;
   position: relative;
-  letter-spacing: 0.225em;
 }
 
 #introDiv1,
@@ -45,17 +44,64 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
 
-#hey::before,
-#hey::after {
-  width: 100%;
-  height: 5px;
-  content: "";
+#introDiv2 {
+  justify-content: center;
+  padding: 5%;
+}
+
+#introDiv1 h4 {
+  font-size: 3vw;
+  top: 35vh;
+  margin: 0;
+}
+
+#maxWrapper {
+  top: 40vh;
   display: block;
-  position: absolute;
-  background: #ca3e47;
+}
+
+#maxWrapper div {
+  height: min-content;
+}
+
+#maxWrapper h1 {
+  font-size: 9vw;
+  color: #ca3e47;
+}
+
+.scrollWords {
+  color: #ca3e47;
+}
+
+/*==========
+* == NAV  ==
+*==========*/
+.navBannerWrapper {
+  position: sticky !important;
+  top: 0;
+  height: 100%;
+  z-index: 999;
+  border-bottom: 3px solid #ca3e47;
+  background: #414141;
+}
+
+#navBar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  z-index: 9999;
+}
+
+#navBar a:hover {
+  transition: color linear 0.3s;
+  color: #ca3e47;
+  cursor: pointer;
 }
 
 /*=============
@@ -74,8 +120,20 @@ body {
   * == INTRO  ==
   *============*/
 
-  #introDiv1,
+  #introDiv1 {
+    height: 30vh !important;
+  }
+
   #introDiv2 {
-    height: 50vh !important;
+    height: 70vh !important;
+    justify-content: start;
+  }
+
+  #introDiv1 h4 {
+    font-size: 7vw;
+  }
+
+  #maxWrapper h1 {
+    font-size: 15vw;
   }
 }
