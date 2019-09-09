@@ -13,9 +13,6 @@ const IndexPage = () => (
 
     <NavBarComponent>
       <AboutComponent />
-      <AboutComponent />
-      <AboutComponent />
-      <AboutComponent />
     </NavBarComponent>
   </>
 );

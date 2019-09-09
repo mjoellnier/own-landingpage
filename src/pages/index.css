@@ -22,22 +22,9 @@ body {
   grid-column: span 2;
 }
 
-/* .grid div {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 /*============
 * == INTRO  ==
 *============*/
-
-#hey {
-  font-size: xx-large;
-  font-family: "Titillium Web", sans-serif;
-  position: relative;
-}
 
 #introDiv1,
 #introDiv2 {
@@ -78,6 +65,20 @@ body {
   color: #ca3e47;
 }
 
+/*============
+* == ABOUT  ==
+*============*/
+
+#aboutDiv1,
+#aboutDiv2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
 /*==========
 * == NAV  ==
 *==========*/
@@ -108,26 +109,27 @@ body {
 * == MOBILE  ==
 *=============*/
 @media (max-width: 900px) {
+  /*===============
+  * == GERNERAL  ==
+  *===============*/
   .span1 {
     grid-column: span 2;
+    height: 30vh !important;
   }
 
   .span2 {
     grid-column: span 2;
+    height: 70vh !important;
+    justify-content: start !important;
+  }
+
+  .grid {
+    padding-top: 15%;
   }
 
   /*============
   * == INTRO  ==
   *============*/
-
-  #introDiv1 {
-    height: 30vh !important;
-  }
-
-  #introDiv2 {
-    height: 70vh !important;
-    justify-content: start;
-  }
 
   #introDiv1 h4 {
     font-size: 7vw;
