@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import TextLoop from "react-text-loop";
+import Obfuscate from "react-obfuscate";
 
 export const IntroComponent = () => {
   return (
@@ -37,10 +38,22 @@ export const IntroComponent = () => {
         </h3>
         <h3>
           It's nice to have you around. Take a look at my{" "}
-          <a href="https://github.com/mjoellnier">portfolio</a> and feel free to{" "}
-          <a href="mailto:max@max-wuest.de?subject=Hi%20Max!">
-            reach out for me
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/mjoellnier"
+          >
+            portfolio
           </a>{" "}
+          and feel free to{" "}
+          <Obfuscate
+            email="hi@max-wuest.de"
+            headers={{
+              subject: "Hi Max!"
+            }}
+          >
+            reach out for me
+          </Obfuscate>{" "}
           if you think you could use my help.
         </h3>
       </div>
