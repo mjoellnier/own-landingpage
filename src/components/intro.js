@@ -56,6 +56,11 @@ export const IntroComponent = () => {
           </Obfuscate>{" "}
           if you think you could use my help.
         </h3>
+        <div id="disclaimer">
+          <a target="_blank" rel="noopener noreferrer" href="/impressum">
+            Impressum
+          </a>
+        </div>
       </div>
     </div>
   );
