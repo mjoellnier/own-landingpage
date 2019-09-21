@@ -5,7 +5,7 @@ import Obfuscate from "react-obfuscate";
 
 export const IntroComponent = () => {
   return (
-    <div class="grid">
+    <div className="grid">
       <div id="introDiv1" className="span1">
         <div>
           <h4>Hi! I am</h4>
@@ -54,7 +54,16 @@ export const IntroComponent = () => {
           >
             reach out for me
           </Obfuscate>{" "}
-          if you think you could use my help.
+          if you think you could use my help. Of course you can also follow me
+          on{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/coding_max"
+          >
+            Twitter
+          </a>{" "}
+          .
         </h3>
         <div id="disclaimer">
           <a target="_blank" rel="noopener noreferrer" href="/impressum">
