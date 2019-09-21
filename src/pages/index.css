@@ -25,6 +25,17 @@ body {
   grid-column: span 2;
 }
 
+a {
+  text-decoration: none;
+  color: #ca3e47;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.5s;
+}
+
+a:hover {
+  border-color: #ca3e47;
+}
+
 /*============
 * == INTRO  ==
 *============*/
@@ -42,6 +53,10 @@ body {
 #introDiv2 {
   justify-content: center;
   padding: 5%;
+}
+
+#introDiv2 h3 {
+  line-height: 1.2;
 }
 
 #introDiv1 h4 {
@@ -66,54 +81,6 @@ body {
 
 .scrollWords {
   color: #ca3e47;
-}
-
-/*============
-* == ABOUT  ==
-*============*/
-
-#aboutDiv1,
-#aboutDiv2 {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  text-align: center;
-}
-
-#aboutDiv2 {
-  justify-content: flex-start !important;
-  padding: 5%;
-  padding-top: 8vw;
-  overflow: scroll;
-  text-align: left;
-}
-
-/*==========
-* == NAV  ==
-*==========*/
-.navBannerWrapper {
-  position: sticky !important;
-  top: 0;
-  height: 100%;
-  z-index: 999;
-  border-bottom: 3px solid #ca3e47;
-  /* background: #414141; */
-}
-
-#navBar {
-  display: flex;
-  width: 100vw;
-  justify-content: space-evenly;
-  padding-top: 3%;
-  z-index: 9999;
-}
-
-#navBar a:hover {
-  transition: color linear 0.3s;
-  color: #ca3e47;
-  cursor: pointer;
 }
 
 /*=============
@@ -150,13 +117,5 @@ body {
 
   #maxWrapper h1 {
     font-size: 15vw;
-  }
-
-  /*============
-  * == ABOUT  ==
-  *============*/
-
-  #aboutDiv2 {
-    padding-top: 0 !important;
   }
 }

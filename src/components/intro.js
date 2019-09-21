@@ -25,18 +25,23 @@ export const IntroComponent = () => {
               "Java engineer",
               "Webdev",
               "Founder",
-              "Open source contributer",
+              "Contributer to Open Source",
               "React dev",
               "Photographer",
               "Nerd",
-              "Warhammer player"
+              "Warhammer player",
+              "Video gamer"
             ]}
           />{" "}
           located in southern Germany.
         </h3>
         <h3>
-          It's nice to have you around. Take a look at my portfolio and feel
-          free to reach out for me when you think you could use my help.
+          It's nice to have you around. Take a look at my{" "}
+          <a href="https://github.com/mjoellnier">portfolio</a> and feel free to{" "}
+          <a href="mailto:max@max-wuest.de?subject=Hi%20Max!">
+            reach out for me
+          </a>{" "}
+          if you think you could use my help.
         </h3>
       </div>
     </div>

@@ -33,7 +33,6 @@ export const Background = () => {
               values="#414141;#624b4b;#414141;"
               begin="1s"
               dur="10s"
-              fill="freeze"
               repeatCount="indefinite"
             />
             <g fill-rule="evenodd">
