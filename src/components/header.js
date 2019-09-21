@@ -1,6 +1,6 @@
-import { Link } from "yurnalist/src/components/node_modules/gatsby";
-import PropTypes from "yurnalist/src/components/node_modules/prop-types";
-import React from "yurnalist/src/components/node_modules/react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 
 const Header = ({ siteTitle }) => (
   <header

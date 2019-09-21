@@ -1,20 +1,15 @@
 import React from "react";
 import { IntroComponent } from "../components/intro";
-import { AboutComponent } from "../components/about";
-import { NavBarComponent } from "../components/navBar";
 import SEO from "../components/seo";
 import "./index.css";
+import { Background } from "../components/background";
 
 const IndexPage = () => (
-  <>
+  <div>
     <SEO title="Home" />
-
+    <Background />
     <IntroComponent />
-
-    <NavBarComponent>
-      <AboutComponent />
-    </NavBarComponent>
-  </>
+  </div>
 );
 
 export default IndexPage;

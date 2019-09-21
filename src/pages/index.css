@@ -12,6 +12,9 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  position: relative;
+  z-index: 999;
 }
 
 .span1 {
@@ -79,6 +82,14 @@ body {
   text-align: center;
 }
 
+#aboutDiv2 {
+  justify-content: flex-start !important;
+  padding: 5%;
+  padding-top: 8vw;
+  overflow: scroll;
+  text-align: left;
+}
+
 /*==========
 * == NAV  ==
 *==========*/
@@ -88,7 +99,7 @@ body {
   height: 100%;
   z-index: 999;
   border-bottom: 3px solid #ca3e47;
-  background: #414141;
+  /* background: #414141; */
 }
 
 #navBar {
@@ -125,6 +136,8 @@ body {
 
   .grid {
     padding-top: 15%;
+    position: relative;
+    z-index: 999;
   }
 
   /*============
@@ -137,5 +150,13 @@ body {
 
   #maxWrapper h1 {
     font-size: 15vw;
+  }
+
+  /*============
+  * == ABOUT  ==
+  *============*/
+
+  #aboutDiv2 {
+    padding-top: 0 !important;
   }
 }
